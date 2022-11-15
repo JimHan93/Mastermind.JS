@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- author: Jim Han (179381215) -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Mind by Jim Han</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body>
+    <header>MasterMind by Jim Han</header>
+    <article class="main">
+        <h1 class="header">Guess</h1>
+        <h2 class="header">Number of Correctly Placed Digits</h2>
+        <h3 class="header">Number of Incorrectly Placed Digits</h3>
+        <div id="guess" class="record"></div>
+        <div id="correct" class="record"></div>
+        <div id="incorrect" class="record"></div>
+    </article>
+    <article class="input">
+        <input class="text" id="try" type="text" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+        <button id="submit">Submit</button>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
